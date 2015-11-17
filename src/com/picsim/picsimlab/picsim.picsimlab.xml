@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mp:platformTool xmlns:mp="http://crownking/mplab"
+                 xmlns:opt="http://crownking/opt"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://crownking/mplab mplab/platformTool.xsd"
+                 mp:id="picsimlab"
+                 mp:name="PicsimLab"
+                 mp:platformtoolflavor="simulator"
+                 mp:hostplatforms="windows,linux,unix,mac,none"
+                 mp:class="com.picsim.picsimlab.PicsimLab">
+
+  <mp:configurationObject mp:id="picsimlab"
+                          opt:src="picsim.optionLanguage.xml"
+                          opt:runtimepropertiesclass="com.picsim.picsimlab.PicsimLabContextProperties"/>
+
+  <mp:customizerNode mp:idref="picsimlab" mp:name="PicsimLab"/>
+
+  <mp:emulationDescriptor mp:src="picsimlab.emu.xml"/>
+
+  <mp:deviceSupport>
+      <mp:family mp:family="16x">
+          <mp:device mp:name="PIC16F628"/>
+          <mp:device mp:name="PIC16F628A"/>
+          <mp:device mp:name="PIC16F648A"/>
+          <mp:device mp:name="PIC16F777"/>       
+          <mp:device mp:name="PIC16F877"/>
+          <mp:device mp:name="PIC16F877A"/>   
+      </mp:family>
+      <mp:family mp:family="18x">
+          <mp:device mp:name="PIC18F452"/>
+          <mp:device mp:name="PIC18F4550"/>
+          <mp:device mp:name="PIC18F4620"/>
+      </mp:family>
+      <mp:family mp:family="30x">
+          <mp:device mp:name="dsPIC30F1010"/>
+          <mp:device mp:name="dsPIC30F2010"/>
+          <mp:device mp:name="dsPIC30F2011"/>
+      </mp:family>
+  </mp:deviceSupport>
+
+</mp:platformTool>

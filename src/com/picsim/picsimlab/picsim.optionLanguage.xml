@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opt:optionLanguage xmlns:opt="http://crownking/opt"
+                    opt:id="picsimlab"
+                    opt:name="PicsimLab"
+                    opt:runtimepropertiesclass="com.picsim.picsimlab.PicsimLabContextProperties"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://crownking/opt opt/optionLanguage.xsd">
+<!--
+    <opt:optionCategory opt:id="general" opt:name="General">
+        <opt:booleanOption opt:id="enable.something"
+                           opt:name="Enable something">
+
+            This option is a checkbox.
+
+        </opt:booleanOption>
+
+        <opt:enumOption opt:id="select.something"
+                        opt:name="Select something"
+                        opt:textdefault="This">
+
+            This option permits a one-of-many selection.
+
+            <opt:selection opt:text="This"/>
+            <opt:selection opt:text="That"/>
+            <opt:selection opt:text="Other"/>
+        </opt:enumOption>
+
+    </opt:optionCategory>
+
+    <opt:optionCategory opt:id="advanced" opt:name="Advanced">
+
+        <opt:stringOption opt:id="some.string" opt:name="Some string">
+
+            This option takes a string.
+
+        </opt:stringOption>
+    </opt:optionCategory>
+-->
+</opt:optionLanguage>

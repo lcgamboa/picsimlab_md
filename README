@@ -1,0 +1,13 @@
+
+PICsimLab MPLABX Debugger plugin 
+
+
+To use the MPLABX IDE for debug and program the PicsimLab simulator, install the plugin com-picsim-picsimlab.nbm in MPLABX.
+The plugin connect to Picsimlab through a TCP socket using port 1234, and you have to allow the access in the firewall
+
+
+Utils:
+
+PICsimLab 	- https://github.com/lcgamboa/picsimlab or http://sourceforge.net/projects/picsim
+MPLABX		- http://www.microchip.com/mplabx 
+
