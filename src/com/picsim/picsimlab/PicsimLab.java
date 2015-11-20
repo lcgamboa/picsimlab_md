@@ -599,24 +599,25 @@ public class PicsimLab implements Subject, Party, MDBDebugTool {
 */
          
 
-         
-        MemoryModel Meme = (MemoryModel)assembly.getLookup().lookup(EEData.class);      
-        AddrInc    = Meme.WordIncrement();
-        WordSize  =  Meme.WordSize();
-        ees = (int)(((ees) / AddrInc) * WordSize);
-        byte Datae[] = new byte[ees];
-        PMem = Meme.GetPhysicalMemory();
-        r=PMem.Read(0, ees, Datae);
-        
-        if(!sendcmd(PROGE,ees,Datae,0,null))
+        if(ees >0)
         {
-          mm.handleMessage(new Message("Communication error!\n", "picsim", Color.red,  false,  true, false),  ActionList.OutputWindowOnlyDisplayColor);  
-          tool.Disconnect();
-          return false;
-        }
+          MemoryModel Meme = (MemoryModel)assembly.getLookup().lookup(EEData.class);      
+          AddrInc    = Meme.WordIncrement();
+          WordSize  =  Meme.WordSize();
+          ees = (int)(((ees) / AddrInc) * WordSize);
+          byte Datae[] = new byte[ees];
+          PMem = Meme.GetPhysicalMemory();
+          r=PMem.Read(0, ees, Datae);
         
-        mm.handleMessage(new Message("Program Target Write EEprom:"+r+" of "+ees+ "\n", "picsim", Color.black,  false,  true, false),  ActionList.OutputWindowOnlyDisplayColor);  
- 
+          if(!sendcmd(PROGE,ees,Datae,0,null))
+          {
+            mm.handleMessage(new Message("Communication error!\n", "picsim", Color.red,  false,  true, false),  ActionList.OutputWindowOnlyDisplayColor);  
+            tool.Disconnect();
+            return false;
+          }
+        
+          mm.handleMessage(new Message("Program Target Write EEprom:"+r+" of "+ees+ "\n", "picsim", Color.black,  false,  true, false),  ActionList.OutputWindowOnlyDisplayColor);  
+        }
          
         obs.Update(ToolEvent.EVENTS.PROGRAM_DONE);
         
