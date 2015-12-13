@@ -9,6 +9,7 @@
     engine descriptor'.
 
     <emu:indextable>
+        <emu:indextablerecord device="PIC16F84A" emulengine="sim"/>
         <emu:indextablerecord device="PIC16F628" emulengine="sim"/>
         <emu:indextablerecord device="PIC16F628A" emulengine="sim"/>
         <emu:indextablerecord device="PIC16F648A" emulengine="sim"/>
@@ -16,6 +17,7 @@
         <emu:indextablerecord device="PIC16F877" emulengine="sim"/>
         <emu:indextablerecord device="PIC16F877A" emulengine="sim"/>      
         <emu:indextablerecord device="PIC18F452" emulengine="pic18sim"/>
+        <emu:indextablerecord device="PIC18F4520" emulengine="pic18sim"/>
         <emu:indextablerecord device="PIC18F4550" emulengine="pic18sim"/>
         <emu:indextablerecord device="PIC18F4620" emulengine="pic18sim"/>
         <emu:indextablerecord device="dsPIC30F1010" emulengine="dssim"/>

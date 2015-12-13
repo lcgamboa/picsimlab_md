@@ -543,6 +543,12 @@ public class PicsimLab implements Subject, Party, MDBDebugTool {
         long AddrInc; 
         long WordSize;
         
+        MemoryModel Memd = (MemoryModel)assembly.getLookup().lookup(FileRegisters.class);  
+        AddrInc    = Memd.WordIncrement();
+        WordSize  =  Memd.WordSize();
+        datas = (int)(((datas) / AddrInc) * WordSize);
+        mm.handleMessage(new Message("FileRegisters Memory size: "+datas+ "\n", "picsim", Color.black,  true,  true, true),  ActionList.OutputWindowOnlyDisplayColor);  
+        
         MemoryModel Memp = (MemoryModel)assembly.getLookup().lookup(ProgramMemory.class);   
         AddrInc    = Memp.WordIncrement();
         WordSize  =  Memp.WordSize();
@@ -558,7 +564,7 @@ public class PicsimLab implements Subject, Party, MDBDebugTool {
           return false;
         }    
         
-        mm.handleMessage(new Message("Program Target Write ProgMem:"+r+" of "+codes+ "\n", "picsim", Color.black,  true,  true, true),  ActionList.OutputWindowOnlyDisplayColor);  
+        mm.handleMessage(new Message("Program Target Write ProgMem:"+r+" of "+codes+ "\n", "picsim", Color.black,  false,  true, false),  ActionList.OutputWindowOnlyDisplayColor);  
         
     
         
