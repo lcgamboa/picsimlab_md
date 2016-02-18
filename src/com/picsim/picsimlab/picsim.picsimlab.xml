@@ -19,16 +19,20 @@
 
   <mp:deviceSupport>
       <mp:family mp:family="16x">
+          <mp:device mp:name="PIC16F84A"/>
           <mp:device mp:name="PIC16F628"/>
           <mp:device mp:name="PIC16F628A"/>
           <mp:device mp:name="PIC16F648A"/>
           <mp:device mp:name="PIC16F777"/>       
           <mp:device mp:name="PIC16F877"/>
           <mp:device mp:name="PIC16F877A"/>   
+          <mp:device mp:name="PIC16F1619"/> 
       </mp:family>
       <mp:family mp:family="18x">
           <mp:device mp:name="PIC18F452"/>
+          <mp:device mp:name="PIC18F4520"/>
           <mp:device mp:name="PIC18F4550"/>
+          <mp:device mp:name="PIC18F45K50"/>
           <mp:device mp:name="PIC18F4620"/>
       </mp:family>
       <mp:family mp:family="30x">
