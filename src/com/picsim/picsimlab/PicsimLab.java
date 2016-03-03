@@ -86,7 +86,7 @@ public class PicsimLab implements Subject, Party, MDBDebugTool {
     private MessageMediator mm = Lookup.getDefault().lookup(MessageMediator.class);
     
     //enable debug messages
-    private static final boolean DEBUG = false;
+    private static final boolean DEBUG = false; 
     
     //device info;
       xPIC xpic;
@@ -615,14 +615,21 @@ public class PicsimLab implements Subject, Party, MDBDebugTool {
           PMem = Meme.GetPhysicalMemory();
           r=PMem.Read(0, ees, Datae);
         
-          if(!sendcmd(PROGE,ees,Datae,0,null))
+          if(r > 0)
           {
-            mm.handleMessage(new Message("Communication error!\n", "picsim", Color.red,  false,  true, false),  ActionList.OutputWindowOnlyDisplayColor);  
-            tool.Disconnect();
-            return false;
+            if(!sendcmd(PROGE,ees,Datae,0,null))
+            {
+              mm.handleMessage(new Message("Communication error!\n", "picsim", Color.red,  false,  true, false),  ActionList.OutputWindowOnlyDisplayColor);  
+              tool.Disconnect();
+              return false;
+            }
+              mm.handleMessage(new Message("Program Target Write EEprom:"+r+" of "+ees+ "\n", "picsim", Color.black,  false,  true, false),  ActionList.OutputWindowOnlyDisplayColor);  
+          }
+          else
+          {
+              mm.handleMessage(new Message("Program Target Write EEprom:"+r+" of "+ees+ " FAILED\n", "picsim", Color.red,  false,  true, false),  ActionList.OutputWindowOnlyDisplayColor);      
           }
         
-          mm.handleMessage(new Message("Program Target Write EEprom:"+r+" of "+ees+ "\n", "picsim", Color.black,  false,  true, false),  ActionList.OutputWindowOnlyDisplayColor);  
         }
          
         obs.Update(ToolEvent.EVENTS.PROGRAM_DONE);
