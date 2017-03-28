@@ -405,12 +405,16 @@ public class PicsimLab implements Subject, Party, MDBDebugTool {
         // data that would help you talk to the tool more effectively.
         // However, this can be delayed until the ConnectToTool method is
         // called.
+        if(DEBUG)System.out.println("PicsimLab.SetHWTool() was called");
+        this.tool = Tool;
+               
         if(mSocket == null)
         {
         try {
             // set up connection with server
             this.mSocket = new Socket(mServer, mServerPort);
         } catch (Exception ee) {
+            return;
         }
  
         // get the I/O streams for the socket.
@@ -422,10 +426,6 @@ public class PicsimLab implements Subject, Party, MDBDebugTool {
             e.printStackTrace();
         }
         }
-    
-        
-        if(DEBUG)System.out.println("PicsimLab.SetHWTool() was called");
-        this.tool = Tool;
     }
 
  
