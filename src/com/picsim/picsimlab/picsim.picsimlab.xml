@@ -27,7 +27,10 @@
           <mp:device mp:name="PIC16F877"/>
           <mp:device mp:name="PIC16F877A"/>   
           <mp:device mp:name="PIC16F1619"/> 
+          <mp:device mp:name="PIC16F1788"/> 
+          <mp:device mp:name="PIC16F1789"/> 
           <mp:device mp:name="PIC16F18855"/> 
+          <mp:device mp:name="PIC16F1939"/> 
       </mp:family>
       <mp:family mp:family="18x">
           <mp:device mp:name="PIC18F452"/>
@@ -35,11 +38,16 @@
           <mp:device mp:name="PIC18F4550"/>
           <mp:device mp:name="PIC18F45K50"/>
           <mp:device mp:name="PIC18F4620"/>
+          <mp:device mp:name="PIC18F27K40"/>
       </mp:family>
       <mp:family mp:family="30x">
           <mp:device mp:name="dsPIC30F1010"/>
           <mp:device mp:name="dsPIC30F2010"/>
           <mp:device mp:name="dsPIC30F2011"/>
+      </mp:family>
+      <mp:family mp:family="avr">
+          <mp:device mp:name="ATmega328"/>
+          <mp:device mp:name="ATmega328p"/>
       </mp:family>
   </mp:deviceSupport>
 

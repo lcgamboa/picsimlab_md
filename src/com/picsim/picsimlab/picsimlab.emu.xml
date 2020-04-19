@@ -16,16 +16,22 @@
         <emu:indextablerecord device="PIC16F777" emulengine="sim"/>
         <emu:indextablerecord device="PIC16F877" emulengine="sim"/>
         <emu:indextablerecord device="PIC16F877A" emulengine="sim"/>   
-        <emu:indextablerecord device="PIC16F1619" emulengine="sim"/>      
-        <emu:indextablerecord device="PIC16F18855" emulengine="sim"/> 
+        <emu:indextablerecord device="PIC16F1619" emulengine="sim"/>  
+        <emu:indextablerecord device="PIC16F1788" emulengine="sim"/>  
+        <emu:indextablerecord device="PIC16F1789" emulengine="sim"/>      
+        <emu:indextablerecord device="PIC16F18855" emulengine="sim"/>
+        <emu:indextablerecord device="PIC16F1939" emulengine="sim"/>  
         <emu:indextablerecord device="PIC18F452" emulengine="pic18sim"/>
         <emu:indextablerecord device="PIC18F4520" emulengine="pic18sim"/>
         <emu:indextablerecord device="PIC18F4550" emulengine="pic18sim"/>
         <emu:indextablerecord device="PIC18F45K50" emulengine="pic18sim"/>
         <emu:indextablerecord device="PIC18F4620" emulengine="pic18sim"/>
+        <emu:indextablerecord device="PIC18F27K40" emulengine="pic18sim"/>
         <emu:indextablerecord device="dsPIC30F1010" emulengine="dssim"/>
         <emu:indextablerecord device="dsPIC30F2010" emulengine="dssim"/>
         <emu:indextablerecord device="dsPIC30F2011" emulengine="dssim"/>
+        <emu:indextablerecord device="ATmega328" emulengine="avrsim"/>
+        <emu:indextablerecord device="ATmega328p" emulengine="avrsim"/>
     </emu:indextable>
 
     Here are the 'emulation engine descriptors'.
@@ -81,6 +87,22 @@
  <!-- This is for PIC18 devices.  It should be noted that this device includes
   support for the reset function. See emu:nonaddressbreaks. -->
   <emu:emulenginedesc name="pic18sim">
+    <emu:bps maxdatabps="1000" maxdelaycount="1000000000" maxpasscount="1000000000" maxprogbps="1000" separate="false"/>
+    <emu:databps access="readorwriteoreither" bus="false" match="true" widths="false"/>
+    <emu:tuples maxands="1000"/>
+    <emu:sequences maxbpsinseq="1000" maxseqs="1000"/>
+    <emu:swbps supported="false"/>
+    <emu:datacapture allowed="false"/>
+    <emu:addressmask allowed="false"/>
+    <emu:dma breaksallowed="false"/>
+    <emu:stopwatch available="true" cpcontrolled="false" freerunning="true" instcpsonly="true"/>
+    <emu:trace allowed="false"/>
+    <emu:tblxxbp available="false"/>
+    <emu:nonaddressbreaks clockswitch="false" reset="true" sleep="true" stack="true" wakeup="true" watchdog="true"/>
+    <emu:runtimebps supported="false"/>
+  </emu:emulenginedesc>
+  <!-- This is for avr 8 bit devices. -->
+  <emu:emulenginedesc name="avrsim">
     <emu:bps maxdatabps="1000" maxdelaycount="1000000000" maxpasscount="1000000000" maxprogbps="1000" separate="false"/>
     <emu:databps access="readorwriteoreither" bus="false" match="true" widths="false"/>
     <emu:tuples maxands="1000"/>
