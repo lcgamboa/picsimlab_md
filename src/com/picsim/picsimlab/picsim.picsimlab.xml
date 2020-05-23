@@ -5,6 +5,7 @@
                  xsi:schemaLocation="http://crownking/mplab mplab/platformTool.xsd"
                  mp:id="picsimlab"
                  mp:name="PicsimLab"
+                 mp:insertOrder="40"
                  mp:platformtoolflavor="simulator"
                  mp:hostplatforms="windows,linux,unix,mac,none"
                  mp:class="com.picsim.picsimlab.PicsimLab">
