@@ -3,6 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group/>
-        <group name="java"/>
+        <group name="java">
+            <file>file:/home/gamboa/NetBeansProjects/picsimlab_md/src/com/picsim/picsimlab/picsimlab.emu.xml</file>
+        </group>
     </open-files>
 </project-private>
