@@ -164,8 +164,8 @@ public class PicsimLab implements Subject, Party, MDBDebugTool {
 
     // Writes provided 4-byte array containing a little-endian integer to a big-endian integer.
     public static final int byteArrayToInt(byte[] value) {
-        int ret = ((value[0] & 0xFF) << 24) | ((value[1] & 0xFF) << 16)
-                | ((value[2] & 0xFF) << 8) | (value[3] & 0xFF);
+        int ret = ((value[3] & 0xFF) << 24) | ((value[2] & 0xFF) << 16)
+                | ((value[1] & 0xFF) << 8) | (value[0] & 0xFF);
 
         return ret;
     }
@@ -730,12 +730,12 @@ public class PicsimLab implements Subject, Party, MDBDebugTool {
 
         for (int x = 0; x < bpc; x++) {
             long addr = WCPS.getWritableControlPoint(x).getBreakAddress();
-            bpd = combine(bpd, shortToByteArray((int) addr));
+            bpd = combine(bpd, intToByteArray((int) addr));
         }
 
         cpm.releaseWritableControlPointStore(WCPS);
 
-        if (!sendcmd(SETBK, 2 + bpc * 2, bpd, 0, null)) {
+        if (!sendcmd(SETBK, 2 + bpc * 4, bpd, 0, null)) {
             mm.handleMessage(new Message("Communication error!\n", "picsim", Color.red, false, true, false), ActionList.OutputWindowOnlyDisplayColor);
             tool.Disconnect();
             return false;
@@ -989,7 +989,7 @@ public class PicsimLab implements Subject, Party, MDBDebugTool {
         // Assigns a program-counter value to the target device.  This method
         // is called during a debug session only.
 
-        if (!sendcmd(SETPC, 2, shortToByteArray((int) address), 0, null)) {
+        if (!sendcmd(SETPC, 4, intToByteArray((int) address), 0, null)) {
             mm.handleMessage(new Message("Communication error!\n", "picsim", Color.red, false, true, false), ActionList.OutputWindowOnlyDisplayColor);
             tool.Disconnect();
             return;
@@ -1030,8 +1030,8 @@ public class PicsimLab implements Subject, Party, MDBDebugTool {
         // Returns the current program-counter value.  This method is called
         // during a debug session only.
 
-        byte pcb[] = new byte[2];
-        if (!sendcmd(GETPC, 0, null, 2, pcb)) {
+        byte pcb[] = new byte[4];
+        if (!sendcmd(GETPC, 0, null, 4, pcb)) {
             mm.handleMessage(new Message("Communication error!\n", "picsim", Color.red, false, true, false), ActionList.OutputWindowOnlyDisplayColor);
             tool.Disconnect();
             return 0;
@@ -1041,7 +1041,7 @@ public class PicsimLab implements Subject, Party, MDBDebugTool {
             System.out.println("PicsimLab.GetPC() was called");
         }
 
-        return byteArrayToShort(pcb);
+        return byteArrayToInt(pcb);
     }
 
     @Override
