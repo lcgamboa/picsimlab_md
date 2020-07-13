@@ -34,7 +34,8 @@
         <emu:indextablerecord device="dsPIC30F2010" emulengine="dssim"/>
         <emu:indextablerecord device="dsPIC30F2011" emulengine="dssim"/>
         <emu:indextablerecord device="ATmega328" emulengine="avrsim"/>
-        <emu:indextablerecord device="ATmega328p" emulengine="avrsim"/>
+        <emu:indextablerecord device="ATmega328P" emulengine="avrsim"/>
+        <emu:indextablerecord device="ATmega2560" emulengine="avrsim"/>        
     </emu:indextable>
 
     Here are the 'emulation engine descriptors'.

@@ -51,7 +51,8 @@
       </mp:family>
       <mp:family mp:family="avr">
           <mp:device mp:name="ATmega328"/>
-          <mp:device mp:name="ATmega328p"/>
+          <mp:device mp:name="ATmega328P"/>
+          <mp:device mp:name="ATmega2560"/>
       </mp:family>
   </mp:deviceSupport>
 

@@ -5,6 +5,8 @@
         <group/>
         <group name="java">
             <file>file:/home/gamboa/NetBeansProjects/picsimlab_md/src/com/picsim/picsimlab/picsim.picsimlab.xml</file>
+            <file>file:/home/gamboa/NetBeansProjects/picsimlab_md/src/com/picsim/picsimlab/picsim.optionLanguage.xml</file>
+            <file>file:/home/gamboa/NetBeansProjects/picsimlab_md/src/com/picsim/picsimlab/picsimlab.emu.xml</file>
         </group>
     </open-files>
 </project-private>
