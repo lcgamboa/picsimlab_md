@@ -44,6 +44,7 @@
           <mp:device mp:name="PIC18F27K40"/>
           <mp:device mp:name="PIC18F46J50"/>  
           <mp:device mp:name="PIC18F47K40"/>          
+          <mp:device mp:name="PIC18F67J94"/>  
       </mp:family>
       <mp:family mp:family="30x">
           <mp:device mp:name="dsPIC30F1010"/>

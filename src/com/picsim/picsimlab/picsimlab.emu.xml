@@ -30,7 +30,8 @@
         <emu:indextablerecord device="PIC18F4620" emulengine="pic18sim"/>
         <emu:indextablerecord device="PIC18F27K40" emulengine="pic18sim"/>
         <emu:indextablerecord device="PIC18F46J50" emulengine="pic18sim"/>        
-        <emu:indextablerecord device="PIC18F47K40" emulengine="pic18sim"/>        
+        <emu:indextablerecord device="PIC18F47K40" emulengine="pic18sim"/>  
+        <emu:indextablerecord device="PIC18F67J94" emulengine="pic18sim"/>         
         <emu:indextablerecord device="dsPIC30F1010" emulengine="dssim"/>
         <emu:indextablerecord device="dsPIC30F2010" emulengine="dssim"/>
         <emu:indextablerecord device="dsPIC30F2011" emulengine="dssim"/>
