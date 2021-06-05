@@ -55,6 +55,7 @@
           <mp:device mp:name="ATmega328"/>
           <mp:device mp:name="ATmega328P"/>
           <mp:device mp:name="ATmega2560"/>
+          <mp:device mp:name="ATtiny85"/>
       </mp:family>
   </mp:deviceSupport>
 
