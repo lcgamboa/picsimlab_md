@@ -27,6 +27,7 @@
           <mp:device mp:name="PIC16F777"/>       
           <mp:device mp:name="PIC16F877"/>
           <mp:device mp:name="PIC16F877A"/>   
+          <mp:device mp:name="PIC16F887"/> 
           <mp:device mp:name="PIC16F1619"/> 
           <mp:device mp:name="PIC16F1788"/> 
           <mp:device mp:name="PIC16F1789"/> 

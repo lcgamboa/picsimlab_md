@@ -8,6 +8,11 @@
             <file>file:/home/gamboa/NetBeansProjects/picsimlab_md/src/com/picsim/picsimlab/picsim.optionLanguage.xml</file>
             <file>file:/home/gamboa/NetBeansProjects/picsimlab_md/src/com/picsim/picsimlab/picsimlab.emu.xml</file>
         </group>
-        <group name="cdev"/>
+        <group name="cdev">
+            <file>file:/home/gamboa/NetBeansProjects/picsimlab_md/src/com/picsim/picsimlab/picsimlab.emu.xml</file>
+            <file>file:/home/gamboa/NetBeansProjects/picsimlab_md/src/com/picsim/picsimlab/picsim.picsimlab.xml</file>
+            <file>file:/home/gamboa/NetBeansProjects/picsimlab_md/src/com/picsim/picsimlab/picsim.optionLanguage.xml</file>
+            <file>file:/home/gamboa/NetBeansProjects/picsimlab_md/src/com/picsim/picsimlab/layer.xml</file>
+        </group>
     </open-files>
 </project-private>
