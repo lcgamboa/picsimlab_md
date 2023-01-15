@@ -27,6 +27,7 @@
           <mp:device mp:name="PIC16F777"/>       
           <mp:device mp:name="PIC16F877"/>
           <mp:device mp:name="PIC16F877A"/>   
+          <mp:device mp:name="PIC16F886"/>           
           <mp:device mp:name="PIC16F887"/> 
           <mp:device mp:name="PIC16F1619"/> 
           <mp:device mp:name="PIC16F1788"/> 
@@ -40,8 +41,10 @@
           <mp:device mp:name="PIC18F452"/>
           <mp:device mp:name="PIC18F4520"/>
           <mp:device mp:name="PIC18F4550"/>
+          <mp:device mp:name="PIC18F4580"/>
           <mp:device mp:name="PIC18F45K50"/>
           <mp:device mp:name="PIC18F4620"/>
+          <mp:device mp:name="PIC18F26K80"/>
           <mp:device mp:name="PIC18F27K40"/>
           <mp:device mp:name="PIC18F46J50"/>  
           <mp:device mp:name="PIC18F47K40"/>          
