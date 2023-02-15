@@ -33,6 +33,7 @@
           <mp:device mp:name="PIC16F1788"/> 
           <mp:device mp:name="PIC16F1789"/> 
           <mp:device mp:name="PIC16F18855"/> 
+          <mp:device mp:name="PIC16F1829"/> 
           <mp:device mp:name="PIC16F1939"/> 
           <mp:device mp:name="PIC16F18324"/> 
           <mp:device mp:name="PIC16F18344"/> 
