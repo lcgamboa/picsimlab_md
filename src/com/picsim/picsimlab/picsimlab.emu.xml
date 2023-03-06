@@ -18,6 +18,7 @@
         <emu:indextablerecord device="PIC16F877A" emulengine="sim"/>  
         <emu:indextablerecord device="PIC16F886" emulengine="sim"/>          
         <emu:indextablerecord device="PIC16F887" emulengine="sim"/>   
+        <emu:indextablerecord device="PIC16F1516" emulengine="sim"/>      
         <emu:indextablerecord device="PIC16F1619" emulengine="sim"/>  
         <emu:indextablerecord device="PIC16F1788" emulengine="sim"/>  
         <emu:indextablerecord device="PIC16F1789" emulengine="sim"/>      
@@ -32,6 +33,7 @@
         <emu:indextablerecord device="PIC18F4580" emulengine="pic18sim"/>
         <emu:indextablerecord device="PIC18F45K50" emulengine="pic18sim"/>
         <emu:indextablerecord device="PIC18F4620" emulengine="pic18sim"/>
+        <emu:indextablerecord device="PIC18F24Q10" emulengine="pic18sim"/>
         <emu:indextablerecord device="PIC18F26K80" emulengine="pic18sim"/>
         <emu:indextablerecord device="PIC18F27K40" emulengine="pic18sim"/>
         <emu:indextablerecord device="PIC18F46J50" emulengine="pic18sim"/>        
