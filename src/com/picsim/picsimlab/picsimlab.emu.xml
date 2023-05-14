@@ -13,6 +13,7 @@
         <emu:indextablerecord device="PIC16F628" emulengine="sim"/>
         <emu:indextablerecord device="PIC16F628A" emulengine="sim"/>
         <emu:indextablerecord device="PIC16F648A" emulengine="sim"/>
+        <emu:indextablerecord device="PIC16F688" emulengine="sim"/>
         <emu:indextablerecord device="PIC16F777" emulengine="sim"/>
         <emu:indextablerecord device="PIC16F877" emulengine="sim"/>
         <emu:indextablerecord device="PIC16F877A" emulengine="sim"/>  
