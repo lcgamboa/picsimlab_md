@@ -2,15 +2,14 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
         <group name="java">
             <file>file:/home/gamboa/NetBeansProjects/picsimlab_md/src/com/picsim/picsimlab/picsim.picsimlab.xml</file>
             <file>file:/home/gamboa/NetBeansProjects/picsimlab_md/src/com/picsim/picsimlab/picsim.optionLanguage.xml</file>
             <file>file:/home/gamboa/NetBeansProjects/picsimlab_md/src/com/picsim/picsimlab/picsimlab.emu.xml</file>
         </group>
+        <group/>
         <group name="cdev">
-            <file>file:/home/gamboa/NetBeansProjects/picsimlab_md/src/com/picsim/picsimlab/picsim.picsimlab.xml</file>
-            <file>file:/home/gamboa/NetBeansProjects/picsimlab_md/src/com/picsim/picsimlab/picsimlab.emu.xml</file>
+            <file>file:/home/gamboa/NetBeansProjects/picsimlab_md/src/com/picsim/picsimlab/PicsimLab.java</file>
         </group>
     </open-files>
 </project-private>

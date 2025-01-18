@@ -1046,7 +1046,9 @@ public class PicsimLab implements Subject, Party, MDBDebugTool {
 
     @Override
     public long GetPreviousPC() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        // Gets the previous PC (the one right before the current PC).                                                                         *
+        // return:  returns the previous PC or Long.MAX_VALUE if not supported.
+        return Long.MAX_VALUE;
     }
 
     @Override
